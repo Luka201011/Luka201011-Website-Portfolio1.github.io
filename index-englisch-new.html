@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Luka Jevremovic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-englisch.css" />
+  </head>
+  <body>
+    <img src="img/Hintergrund.jpg" id="Hintergrund" alt="Hintergrund" />
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom" id="Navigation">
+      <div class="container-fluid px-3">
+        <div class="navbar-lang me-auto">
+          <a href="index.html" class="me-2">
+            <img src="img/flagge.png" alt="Deutsch" class="flag-icon" />
+          </a>
+          <a href="index-englisch.html">
+            <img src="img/vereinigtes-konigreich.png" alt="Englisch" class="flag-icon" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation" id="burger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLinks">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#Navigation">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Titel-übermich">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Titel-kompetenzen">Competencies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Titel-Projekte">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Titel-Kontakt">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+      <div class="container-fluid">
+        <div class="row align-items-center g-4 py-5">
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <h2 id="Name-start">Luka Jevremovic</h2>
+            <h1 id="Beruf-links">computer Scientist</h1>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <div class="card" id="Card-Bild-mitte">
+              <div class="card-body">
+                <img src="img/klein-profilbild.jpg" id="Bild-1page-mitte" alt="Portrait of Luka" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <h1 id="beruf-rechts">Application Developer</h1>
+            <h2 id="Jahr-start">First year</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div id="Beschreibung-start-Text" class="text-center">
+              <p>
+                Currently I'm in my first year as an application developer at Swisscom. 
+                With this portfolio website, I want to showcase my skills and projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-about" id="section-about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" id="Card-übermich">
+              <div class="card-body">
+                <h1 id="Titel-übermich">About me</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 py-4">
+          <div class="col-12 col-md-5">
+            <div class="card" id="Card-beruf">
+              <div class="card-body">
+                <p id="Text-übermich-beruf">Hey! I'm <strong>Luka Jevremovic</strong>, born in <strong>2010</strong>. I'm fascinated by <strong>computers, technology, natural sciences, programming, and mathematics</strong>, and that's why I see my future in computer science. I chose the career <strong>computer scientist</strong>, because I enjoy developing my own applications and working as part of a team to create and implement new concepts. With this website, I want to show <strong>what I've learned</strong> and share my enthusiasm for computer science. I'm <strong>honest, social, organized, focused</strong>, and enjoy collaborating with others. My dream is to study <strong>business informatics</strong> or <strong>cybersecurity</strong> in the future.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-2 d-flex justify-content-center">
+            <div class="card" id="Card-Bild-übermich">
+              <div class="card-body">
+                <img src="img/klein-profilbild.jpg" id="Bild-2page-rund" alt="Portrait of Luka" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5">
+            <div class="flip-hobby" id="Card-hobby">
+              <div class="flip-hobby-inner">
+                <div class="flip-hobby-front">
+                  <p id="Text-übermich-hobby">In my <strong>free time</strong>, I spend a lot of time <strong>outdoors with friends</strong> and enjoy being active. I particularly enjoy <strong>dancing Serbian folk dances</strong>, as it's fun for me and helps me <strong>maintain my culture and build friendships</strong>. Additionally, I <strong>enjoy playing basketball.</strong></p>
+                  <button class="btn btn-primary mt-3" onclick="fliphobby('Card-hobby')">
+                    More Info
+                  </button>
+                </div>
+                <div class="flip-hobby-back">
+                  <h2 class="fw-bold">Videos</h2>
+                  <div class="videos-wrapper">
+                    <div class="video">
+                      <iframe id="video1"
+                        src="https://www.youtube.com/embed/TioCekBfNy8"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <div class="video">
+                      <iframe id="video2"
+                        src="https://www.youtube.com/embed/n-3aOFxzdG0"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </div>
+                  <button class="btn btn-secondary mt-3" onclick="fliphobby('Card-hobby')">
+                    Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-skills" id="section-skills">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" id="Card-Kompetenzen">
+              <div class="card-body">
+                <h1 id="Titel-kompetenzen">Competencies</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 py-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-HTML">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>HTML</h2>
+                  <img src="img/klicken.png" alt="click me" id="drueck-mich" />
+                </div>
+                <div class="card-back">
+                  <h2>advanced</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-CSS">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>CSS</h2>
+                </div>
+                <div class="card-back">
+                  <h2>advanced</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-JavaScript">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>JavaScript</h2>
+                </div>
+                <div class="card-back">
+                  <h2>Basic knowledge</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-Angular">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>Angular</h2>
+                </div>
+                <div class="card-back">
+                  <h2>Basic knowledge</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-TypeScript">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>TypeScript</h2>
+                </div>
+                <div class="card-back">
+                  <h2>Basic knowledge</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-container" id="Card-SDX">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h2>SDX</h2>
+                </div>
+                <div class="card-back">
+                  <h2>Basic knowledge</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-projects" id="section-projects">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" id="Card-Projekte">
+              <div class="card-body">
+                <h1 id="Titel-Projekte">Projects</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 py-4">
+          <div class="col-12 col-lg-6">
+            <div class="flip-card" id="first-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2 class="fw-bold">First Steps 2025 NEX-14</h2>
+                  <div class="title-line"></div>
+                  <p><strong>Host:</strong> Jonas Schweizer</p>
+                  <p>
+                    During the First Steps I learned the basic knowledge and expectations. I got to know the most important tools and received numerous introductions. In the process, I took the first steps of my apprenticeship, got to know my learning partner, future colleagues and Swisscom. After First Steps, I felt well prepared for working life during my training.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="flip-card" id="second-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h2 class="fw-bold">IT Onboarding Team</h2>
+                  <div class="title-line"></div>
+                  <p><strong>Host:</strong> Margherita Fasanella</p>
+                  <p>
+                    The IT Onboarding project gave me first technical knowledge of web development, including HTML, CSS, JavaScript, TypeScript and Angular. I created my own portfolio website and developed a small web application in group work. In the process, I learned about the agile work processes at Swisscom, in particular Scrum, to be optimally prepared for business life.
+                  </p>
+                  <button class="btn btn-primary mt-3" onclick="flipCard('second-card')">
+                    More Info
+                  </button>
+                </div>
+                <div class="flip-card-back">
+                  <h2 class="fw-bold">My Work</h2>
+                  <div class="title-line"></div>
+                  <p>
+                    I was able to implement all of this in my project:
+                  </p>
+                  <br>
+                  <p>
+                    <strong>Portfolio Website:</strong>
+                      You are currently on my portfolio website, which I created as part of the IT Onboarding project.
+                  </p>
+                  <p>
+                    <strong>Calculator:</strong>
+                      In a group project, I developed a simple calculator as a web application with my team members. I was responsible for implementing the basic functions such as addition, subtraction, multiplication and division.
+                  </p>
+                  <button class="btn btn-secondary mt-3" onclick="flipCard('second-card')">
+                    Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-contact" id="section-contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" id="Card-Kontakt">
+              <div class="card-body">
+                <h1 id="Titel-Kontakt">Contact</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 py-4">
+          <div class="col-12 col-lg-5">
+            <div class="card" id="Card-Ort">
+              <div class="card-body">
+                <h2 id="Titel-Ort">Current project location</h2>
+                <iframe
+                  id="Standort-GoogleMaps"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.0550959660227!2d8.50823327761089!3d47.39135787117084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a4886815381%3A0x78b4b7222728e230!2sF%C3%B6rrlibuckstrasse%20181%2C%208005%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1761036619846!5m2!1sde!2sch"
+                  title="Current project location"
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-2"></div>
+
+          <div class="col-12 col-lg-5">
+            <div id="Kontaktdaten-Box">
+              <div class="card" id="Card-Kontaktdaten">
+                <div class="card-body">
+                  <h2 id="Titel-Kontaktdaten">contact details</h2>
+                  <div class="card" id="Card-second-Kontaktdaten">
+                    <div class="card-body contact-list">
+                      <div class="row-item">
+                        <img src="img/ausweis.png" alt="ID" class="icon" />
+                        <span>Luka Jevremovic</span>
+                      </div>
+
+                      <div class="row-item">
+                        <img src="img/anruf.png" alt="Call" class="icon" />
+                        <span>079 412 94 62</span>
+                      </div>
+
+                      <div class="row-item">
+                        <img src="img/mail.png" alt="E-Mail" class="icon" />
+                        <a href="mailto:luka.jevremovic@swisscom.com">
+                          luka.jevremovic@swisscom.com
+                        </a>
+                      </div>
+
+                      <div class="row-item">
+                        <img src="img/biografie.png" alt="Intranet" class="icon"/>
+                        <a href="https://neli.swisscom.com/profile/%5Bme%5D/detail" target="_blank">
+                          Intranet
+                        </a>
+                      </div>
+
+                      <div class="row-item">
+                        <img src="img/linkedin.png" alt="LinkedIn" class="icon" />
+                        <a href="https://www.linkedin.com/in/luka-jevremovic-3994a5379/" target="_blank">
+                          LinkedIn
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-3"></div>
+
+              <div class="card" id="Card-RandInfos">
+                <div class="card-body">
+                  <h2 id="Titel-RandInformationen">Border Information</h2>
+                  <div class="card" id="Card-second-RandInfos">
+                    <div class="card-body">
+                      <p id="Text-RandInformationen">
+                        LB: Martin Näf <br />
+                        Host: Margherita Fasanella<br/>
+                        School days: Monday, Tuesday
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-lebenslauf-wrapper">
+      <div class="center-button">
+        <a href="/CV_from_Luka_Jevremovic.pdf" target="_blank" id="button-lebenslauf" class="btn-download">CV download</a>
+      </div>
+      <a class="Go-UP" href="#Navigation" id="GoUP-Link"><img src="img/pfeil-nach-oben.png" alt="To Top" id="Pfeil"/></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

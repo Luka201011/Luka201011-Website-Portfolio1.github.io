@@ -1,0 +1,41 @@
+[id^="Titel-"] {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 320px) {
+  .navbar-nav .nav-link {
+    font-size: 1.8vh;
+  }
+
+  #Beruf-links,
+  #beruf-rechts {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    min-height: 250px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  [id^="Titel-"] {
+    scroll-margin-top: 100px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .section-home {
+    padding: 1rem 0;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    min-height: 250px;
+  }
+
+  #Standort-GoogleMaps {
+    height: 30vh;
+  }
+}

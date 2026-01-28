@@ -1,0 +1,726 @@
+/*BASE STYLES*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#Hintergrund {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/*NAVIGATION*/
+
+.navbar-custom {
+  background-color: rgb(135, 135, 135);
+  padding: 10px 20px;
+}
+
+.navbar-lang {
+  display: flex;
+  gap: 10px;
+}
+
+.flag-icon {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+  color: black !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3vh;
+  margin-right: 1rem;
+  transition: color 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+/*HOME SECTION*/
+
+.section-home {
+  padding: 3rem 0;
+}
+
+#Name-start,
+#Jahr-start {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Beruf-links,
+#beruf-rechts {
+  font-size: clamp(1.6rem, 4vw, 3.2rem);
+  font-weight: bold;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#Card-Bild-mitte {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgb(175, 175, 175) 65%,
+    rgba(175, 175, 175, 0) 100%
+  );
+  border: 4px solid rgb(217, 217, 217);
+  border-radius: 2vh;
+  box-shadow: 0 8px 32px rgba(175, 175, 175, 0.13);
+}
+
+#Bild-1page-mitte {
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  border-radius: 2vh;
+  object-fit: cover;
+}
+
+#Beschreibung-start-Text {
+  font-size: 2.5vh;
+  line-height: 125%;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*ABOUT SECTION*/
+
+.section-about {
+  padding: 2rem 0 3rem 0;
+}
+
+#Card-übermich {
+  background: rgb(217, 217, 217);
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 2rem;
+}
+
+#Titel-übermich {
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#Text-übermich-beruf {
+  width: 100%;
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#Card-beruf {
+  height: auto;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+#Card-beruf:hover {
+  transform: scale(1.05);
+}
+
+#Card-Bild-übermich {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  padding: 1%;
+  background: radial-gradient(
+    circle,
+    rgb(175, 175, 175) 65%,
+    rgba(184, 182, 182, 0) 100%
+  );
+  border: 4px solid rgb(217, 217, 217);
+  border-radius: 12vh;
+  box-shadow: 0 8px 32px rgba(175, 175, 175, 0.13);
+}
+
+#Bild-2page-rund {
+  height: auto;
+  max-width: 100%;
+  border-radius: 12vh;
+  display: flex;
+  align-items: center;
+}
+
+.flip-hobby {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.flip-hobby:hover {
+  transform: scale(1.05);
+}
+
+.flip-hobby-inner {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: "stack";
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+#Text-übermich-hobby {
+  font-size: 1.3rem;
+  margin-top: 6%;
+}
+
+.flip-hobby-front,
+.flip-hobby-back {
+  width: 100%;
+  height: auto;
+  grid-area: stack;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  background: white;
+  padding: 10px;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  align-items: center;
+}
+
+.flip-hobby.flipped .flip-hobby-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-hobby-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-wrapper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.video {
+  flex: 1 1 45%;
+  max-width: 300px;
+}
+
+#video1,
+#video2 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+}
+
+/*SKILLS SECTION*/
+
+.section-skills {
+  padding: 2rem 0 3rem 0;
+}
+
+#Card-Kompetenzen {
+  background: rgb(217, 217, 217);
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 2rem;
+}
+
+#Titel-kompetenzen {
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 150px;
+  border-radius: 4vh;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 4vh;
+  transition: transform 0.8s ease;
+}
+
+.card-container.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2vh;
+  color: black;
+  word-wrap: break-all;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.card-front {
+  background: whitesmoke;
+  flex-direction: row;            
+  justify-content: center;        
+  gap: 0.5rem;     
+}
+
+.card-back {
+  background: linear-gradient(135deg, #3a5f9a, #619de2);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#drueck-mich {
+  width: 2vw;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+/*PROJECTS SECTION*/
+
+.section-projects {
+  padding: 2rem 0 3rem 0;
+}
+
+#Card-Projekte {
+  background: rgb(217, 217, 217);
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+#Titel-Projekte {
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.flip-card {
+  width: 100%;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.flip-card-inner {
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  backface-visibility: hidden;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  position: relative;
+  font-size: 1.3rem;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title-line {
+  width: 100%;
+  height: 6px;
+  background-color: #3a5f9a;
+  margin: 8px 0 20px 0;
+  border-radius: 2px;
+}
+
+.flip-card-front button,
+.flip-card-back button {
+  width: auto;              
+  align-self: center;        
+}
+
+/*CONTACT SECTION*/
+
+.section-contact {
+  padding: 2rem 0 3rem 0;
+}
+
+#Card-Kontakt {
+  background: rgb(217, 217, 217);
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+#Titel-Kontakt {
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#Card-Ort {
+  background: rgb(200, 200, 200);
+  border-radius: 3vh;
+  border: 4px solid rgb(135, 135, 135);
+}
+
+#Titel-Ort {
+  font-size: 3vh;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#Standort-GoogleMaps {
+  width: 100%;
+  height: 45vh;
+  margin-bottom: 2rem;
+  border-radius: 2vh;
+}
+
+#Card-Kontaktdaten {
+  background: rgb(200, 200, 200);
+  border-radius: 3vh;
+  border: 4px solid rgb(135, 135, 135);
+  margin-bottom: 2rem;
+}
+
+#Titel-Kontaktdaten {
+  font-size: 3vh;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#Card-second-Kontaktdaten {
+  background: white;
+  border-radius: 1vh;
+  border: 1px solid black;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.row-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 32px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.row-item span {
+  font-size: 2vh;
+}
+
+.row-item a {
+  font-size: 2vh;
+  color: black;
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.row-item a:hover {
+  text-decoration: underline;
+  color: #3a5f9a;
+}
+
+#Card-RandInfos {
+  background: rgb(200, 200, 200);
+  border-radius: 3vh;
+  border: 4px solid rgb(135, 135, 135);
+}
+
+#Titel-RandInformationen {
+  font-size: 3vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+#Card-second-RandInfos {
+  background: white;
+  border: 1px solid black;
+}
+
+#Text-RandInformationen {
+  font-size: 2vh;
+  text-align: start;
+  line-height: 3.5vh;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer-lebenslauf-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  padding: 28px;
+  background: rgb(200, 200, 200);
+  margin-top: 3%;
+}
+
+.center-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-download {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3a5f9a 10%, #4265ac 90%);
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  padding: 15px 42px;
+  transition: background 0.21s, transform 0.11s;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-download:hover,
+.btn-download:focus {
+  background: linear-gradient(90deg, #2e5691 15%, #405fa5 100%);
+  color: #f7f7f7;
+  transform: scale(1.045);
+  text-decoration: none;
+}
+
+#GoUP-Link {
+  position: absolute;
+  top: 50%;
+  right: 34px;
+  transform: translateY(-50%);
+}
+
+#Pfeil {
+  height: 55px;
+  width: auto;
+  transition: transform 0.14s;
+}
+
+#GoUP-Link:hover #Pfeil,
+#GoUP-Link:focus #Pfeil {
+  transform: translateY(-4px) scale(1.08);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN (Mobile First)
+   ============================================ */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-link {
+    font-size: 2vh;
+    margin-right: 0;
+    padding: 0.5rem 0;
+  }
+
+  #Name-start,
+  #Jahr-start {
+    font-size: 1.5rem;
+  }
+
+  #Beruf-links,
+  #beruf-rechts {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+
+  #Beschreibung-start-Text {
+    font-size: 2vh;
+  }
+
+  #Titel-übermich,
+  #Titel-kompetenzen,
+  #Titel-Projekte,
+  #Titel-Kontakt {
+    font-size: 5.5vh;
+  }
+
+  #Text-übermich-beruf,
+  #Text-übermich-hobby {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    height: 120px;
+  }
+
+  .card-front,
+  .card-back {
+    font-size: 1.8vh;
+  }
+
+  #drueck-mich {
+    width: 4vw;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    padding: 15px;
+    font-size: 1rem;
+    min-height: 300px;
+  }
+
+  #Standort-GoogleMaps {
+    height: 35vh;
+  }
+
+  #Titel-Ort,
+  #Titel-Kontaktdaten,
+  #Titel-RandInformationen {
+    font-size: 2.5vh;
+  }
+
+  .footer-lebenslauf-wrapper {
+    min-height: 60px;
+    padding: 10px;
+  }
+
+  #GoUP-Link {
+    right: 11px;
+  }
+
+  #Pfeil {
+    height: 45px;
+  }
+
+  .btn-download {
+    padding: 11px 16px;
+    font-size: 1rem;
+    border-radius: 23px;
+  }
+
+  .videos-wrapper {
+    gap: 20px;
+  }
+
+  .video {
+    max-width: 250px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .section-hero,
+  .section-about,
+  .section-skills,
+  .section-projects,
+  .section-contact {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-right: 1.5rem;
+  }
+
+  #Standort-GoogleMaps {
+    height: 45vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .section-hero,
+  .section-about,
+  .section-skills,
+  .section-projects,
+  .section-contact {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .section-hero,
+  .section-about,
+  .section-skills,
+  .section-projects,
+  .section-contact {
+    padding: 4rem 3rem;
+  }
+}
