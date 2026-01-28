@@ -403,10 +403,12 @@ body {
   align-self: center;        
 }
 
+#Github-Taschenrechner {
+  text-decoration: underline;
+  color: black;
+}
 
-/* ============================================
-   CONTACT SECTION
-   ============================================ */
+/*CONTACT SECTION*/
 
 .section-contact {
   padding: 2rem 0 3rem 0;
