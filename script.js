@@ -1,9 +1,5 @@
-// ============================================
-// Card Flipping Functionality
-// ============================================
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Flip competency cards on click
+
   let last = null;
   document.querySelectorAll(".card-container").forEach(c =>
     c.addEventListener("click", () => {
@@ -13,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 
-  // Close navbar when a link is clicked
+
   const navbarLinks = document.getElementById('navbarLinks');
   if (navbarLinks) {
     navbarLinks.querySelectorAll('a.nav-link').forEach(link => {
@@ -25,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Flip project card
+
 function flipCard(cardId) {
     const card = document.getElementById(cardId);
     if (card) {
@@ -33,7 +29,7 @@ function flipCard(cardId) {
     }
 }
 
-// Flip hobby card
+
 function fliphobby(cardId) {
     const card = document.getElementById(cardId);
     if (card) {
