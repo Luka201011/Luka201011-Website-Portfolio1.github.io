@@ -29,6 +29,23 @@ function flipCard(cardId) {
     }
 }
 
+  // Mehr anzeigen Button
+  const btn = document.getElementById("mehr-anzeigen-btn");
+  const mehrSkills = document.getElementById("mehr-skills");
+
+  if (btn && mehrSkills) {
+    btn.addEventListener("click", () => {
+      if (mehrSkills.style.display === "none" || mehrSkills.style.display === "") {
+        mehrSkills.style.display = "flex";
+        btn.textContent = "Weniger anzeigen";
+      } else {
+        mehrSkills.style.display = "none";
+        btn.textContent = "Mehr anzeigen";
+      }
+    });
+  }
+
+
 
 function fliphobby(cardId) {
     const card = document.getElementById(cardId);

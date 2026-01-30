@@ -328,6 +328,22 @@ body {
   margin-top: 0.5rem;
 }
 
+#mehr-anzeigen-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 2vh;
+  border: none;
+  background: #3a5f9a;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#mehr-anzeigen-btn:hover {
+  background: #619de2;
+}
+
+
 /*PROJECTS SECTION*/
 
 .section-projects {
